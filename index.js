@@ -3,7 +3,7 @@ var bodyParser = require("body-parser");
 var path = require("path");
 var ejs = require("ejs");
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 const dirname = path.resolve();
 
 app.use(express.static(path.join(dirname, "stylesheet")));
